@@ -58,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-.home {
+#home {
   background-image: url("./img/scheduled\ messag.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,13 +69,13 @@ body {
   align-items: center;
 }
 
-.home .row {
+#home .row {
   display: flex;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.home .row .tagline {
+#home .row .tagline {
   flex-basis: 40%;
   padding: 6rem 6rem;
 }
@@ -90,19 +90,19 @@ body {
   font-weight: 300;
 }
 
-.home .row .form p {
+#home .row .form p {
   font-weight: 500;
   font-size: 2rem;
 }
 
-.home .row .form {
+#home .row .form {
   flex: 10px;
   padding: 5px;
   text-align: center;
   color: #fff;
 }
 
-.home .row .form input,
+#home .row .form input,
 textarea {
   padding: 0 1rem;
   width: 18rem;
@@ -128,7 +128,7 @@ textarea {
   opacity: 1;
 }
 
-.home .row form button {
+#home .row form button {
   width: 20.2rem;
   background: transparent linear-gradient(80deg, #1dc6e6 0%, #1de5bc 100%) 0% 0%
     no-repeat padding-box;
@@ -142,15 +142,17 @@ textarea {
 }
 
 /* FEATURES SECTION */
-.features {
+#features {
   padding: 3rem 8% 1.4rem;
 }
-.features h3 {
+#features h3,
+#ourhappyclient h3,
+#contact h3 {
   color: black;
   margin-left: 6rem;
   margin-bottom: 1.5rem;
 }
-.features .features-content {
+#features .features-content {
   padding: 0 7% 1.4rem;
   display: flex;
   flex-wrap: nowrap;
@@ -174,4 +176,157 @@ textarea {
 
 .features-content.reverse {
   flex-direction: row-reverse;
+  text-align: right;
+}
+
+#ourhappyclient .row,
+#contact div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#ourhappyclient .row .card {
+  color: var(--grey);
+  font-size: 14px;
+  position: relative;
+  width: 17rem;
+  height: 17.5rem;
+  margin: 4rem 4rem;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px #0000000d;
+}
+
+#ourhappyclient .row .card.middle {
+  margin: 0 4rem;
+}
+
+#ourhappyclient .row .card p {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#ourhappyclient .row .card h1 {
+  color: var(--green);
+  font-size: 3rem;
+  margin-bottom: -26px;
+  font-weight: 800;
+}
+
+#ourhappyclient .row .card div {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#ourhappyclient .row .card img {
+  border-radius: 60px;
+}
+
+#contact .maps {
+  display: flex;
+  flex-wrap: nowrap;
+  box-shadow: 20px 20px 30px #0000000d;
+  border-radius: 10px;
+  margin: 3rem 6.3% 1.4rem;
+  overflow: hidden;
+}
+
+#contact .maps iframe {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+#contact div div {
+  color: black;
+  align-items: center;
+  flex: 1 1 45rem;
+  flex-direction: column;
+}
+
+#contact div div h4 {
+  font-size: 20px;
+}
+
+#contact div div p {
+  color: var(--grey);
+  text-align: center;
+  margin: 0 10rem;
+  padding: 1rem 0;
+}
+
+#contact div div button {
+  border: 2px solid #34b7f1;
+  color: #34b7f1;
+  border-radius: 6px;
+  background: none;
+  padding: 13px 7rem;
+}
+
+#contact .ourhq {
+  flex-direction: column;
+  text-align: left;
+  margin: 3rem 6%;
+  padding-right: 55rem;
+  color: black;
+}
+
+#contact .ourhq p {
+  margin: 10px 0;
+  color: var(--grey);
+}
+
+#contact .ourhq a {
+  color: #128c7f;
+}
+
+#last-section {
+  display: flex;
+  background: url("img/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#last-section div {
+  width: 302.5px;
+}
+
+#last-section p {
+  margin: 1.5rem 0;
+}
+
+#last-section button {
+  background: transparent linear-gradient(81deg, #1dc6e6 0%, #1de5bc 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 6px;
+  border: none;
+  padding: 13px 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  background-color: var(--green);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+footer div:last-child a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
