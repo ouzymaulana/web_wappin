@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+  /* #home {
+    object-position: center;
+    background-size: cover;
+    height: 150vh;
+    margin-right: -13rem;
+    object-fit: cover;
+  } */
+
+  html {
+    font-size: 0.625em;
+    /* em end rem */
+  }
+
+  #features .description {
+    margin-top: -10px;
+    padding: 10px 40px;
+  }
+
+  #features .features-content h5 {
+    font-size: 13px;
+  }
+
+  .features-content-img img {
+    width: 250px;
+    height: 180px;
+  }
+
+  #ourhappyclient .row .card.middle {
+    margin: 0;
+  }
+
+  /* our happy client */
+  #ourhappyclient p {
+    font-size: 10px;
+  }
+
+  #contact div div h4 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 0.55em;
+  }
+
+  #features .features-content {
+    flex-wrap: wrap;
+    padding: 0 7% 1.4rem;
+  }
+
+  .features-content.reverse {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .features-content-img img {
+    width: 289px;
+  }
+
+  #features .description {
+    margin-top: -10px;
+    padding: 11px 8px 0 0;
+  }
+
+  #ourhappyclient .row .card {
+    margin: 10px 22px;
+  }
+  #ourhappyclient .row .card.middle {
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer div:last-child {
+    flex-basis: 25%;
+  }
+
+  footer div:last-child a {
+    margin: 0 2px;
+  }
+
+  .feather-icon {
+    height: 12px;
+    width: 12px;
+  }
+}
