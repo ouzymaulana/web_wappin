@@ -30,6 +30,8 @@ body {
   opacity: 0.61;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+  transition: 0.3s;
+  visibility: visible;
 }
 
 /* .navbar .logo img {
@@ -64,7 +66,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -72,7 +74,7 @@ body {
 #home .row {
   display: flex;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 100px 15px;
 }
 
 #home .row .tagline {
@@ -152,18 +154,21 @@ textarea {
 }
 
 /* FEATURES SECTION */
-#features {
-  padding: 3rem 8% 1.4rem;
+#features,
+#ourhappyclient,
+#contact {
+  /* padding: 3rem 8% 1.4rem; */
+  padding: 64px 64px;
 }
 #features h3,
 #ourhappyclient h3,
 #contact h3 {
   color: black;
   margin-left: 6rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 #features .features-content {
-  padding: 0 7% 1.4rem;
+  padding: 0 7% 24px;
   display: flex;
 }
 
@@ -193,7 +198,6 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 #ourhappyclient .row .card {
@@ -216,11 +220,13 @@ textarea {
   padding-right: 20px;
 }
 
-#ourhappyclient .row .card h1 {
+#ourhappyclient .row .card span {
   color: var(--green);
-  font-size: 3rem;
-  margin-bottom: -26px;
   font-weight: 800;
+  padding-left: 6px;
+  display: inline-block;
+  font-size: 4rem;
+  height: 50px;
 }
 
 #ourhappyclient .row .card div {
@@ -241,7 +247,7 @@ textarea {
   flex-wrap: nowrap;
   box-shadow: 20px 20px 30px #0000000d;
   border-radius: 10px;
-  margin: 3rem 6.3% 1.4rem;
+  margin: 0 6.9% 20px;
   overflow: hidden;
 }
 
@@ -280,7 +286,7 @@ textarea {
 #contact .ourhq {
   flex-direction: column;
   text-align: left;
-  margin: 3rem 6%;
+  margin: 0 6.9%;
   padding-right: 55rem;
   color: black;
 }
@@ -315,8 +321,7 @@ textarea {
 }
 
 #last-section button {
-  background: linear-gradient(81deg, #1dc6e6 0%, #1de5bc 100%) 0% 0% no-repeat
-    padding-box;
+  background: linear-gradient(81deg, #1dc6e6, #1de5bc);
   border-radius: 6px;
   border: none;
   padding: 13px 0;
@@ -335,6 +340,7 @@ footer {
 }
 
 footer div:last-child a {
+  display: inline-block;
   color: white;
   margin: 0 10px;
   text-decoration: none;
