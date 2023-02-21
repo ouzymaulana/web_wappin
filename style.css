@@ -170,6 +170,7 @@ textarea {
 #features .features-content {
   padding: 0 7% 24px;
   display: flex;
+  align-items: center;
 }
 
 .features-content-img img {
@@ -189,14 +190,12 @@ textarea {
   padding: 20px;
   border-radius: 50px;
   position: absolute;
-  top: 36%;
-  left: 42%;
+  display: flex;
+  transform: translate(250%, -250%);
 }
 
 .description {
   padding: 10px 50px;
-  position: relative;
-  top: 20px;
 }
 
 .description > h5 {
