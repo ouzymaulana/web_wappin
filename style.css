@@ -173,11 +173,30 @@ textarea {
 }
 
 .features-content-img img {
+  display: block;
   border-radius: 10px;
   box-shadow: 20px 20px 30px #00000019;
 }
+
+#features .features-content .features-content-img {
+  position: relative;
+}
+.features-content-img .features-icon {
+  color: white;
+  background: var(--green);
+  opacity: 0.79;
+  box-shadow: 0px 0px 15px var(--green);
+  padding: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 36%;
+  left: 42%;
+}
+
 .description {
   padding: 10px 50px;
+  position: relative;
+  top: 20px;
 }
 
 .description > h5 {

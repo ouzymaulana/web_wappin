@@ -144,7 +144,7 @@
 
   #features .features-content {
     flex-wrap: wrap;
-    padding: 0 30.5px 22px;
+    padding: 0 30.5px 26px;
   }
 
   .features-content.reverse {
@@ -154,14 +154,20 @@
 
   .features-content-img {
     width: 100%;
+    margin-bottom: 12px;
   }
+
   .features-content-img img {
     width: 100%;
   }
 
+  .features-content-img .features-icon {
+    padding: 14px;
+  }
   #features .description {
-    margin-top: -10px;
+    /* margin-top: -10px; */
     padding: 11px 0 0 0;
+    top: 0;
   }
 
   .description > p {
@@ -180,12 +186,12 @@
   }
 
   #contact div div {
-    padding: 10px 0;
+    padding: 20px 0;
   }
 
   #contact div div button {
-    padding: 6px 36px;
-    font-size: 10px;
+    padding: 6px 32px;
+    font-size: 8px;
   }
 
   #last-section {
@@ -199,17 +205,29 @@
   }
 
   footer {
+    padding: 8px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    /* justify-content: space-between; */
   }
 
-  footer div:last-child {
-    flex-basis: 25%;
+  footer div div:last-child {
+    justify-content: center;
+    display: flex;
+  }
+  footer div:last-child a {
+    margin: 2px 4px 4px 4px;
+  }
+
+  /* footer div:last-child { */
+  /* flex-basis: 25%; */
+  /* flex-direction: row;
+    display: flex;
   }
 
   footer div:last-child a {
     margin: 0 2px;
-  }
+  } */
 
   .feather-icon {
     height: 12px;
