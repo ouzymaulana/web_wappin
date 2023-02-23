@@ -3,6 +3,7 @@
     font-size: 0.625em;
     /* em end rem */
   }
+
   #home {
     background-position: right;
   }
@@ -100,6 +101,41 @@
   html {
     font-size: 0.55em;
   }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 30rem;
+    height: 100vh;
+    background-color: #25d366;
+    opacity: 0.99;
+    transition: 0.4s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  #hamburger-menu .feather-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: white;
+  }
+
   #home {
     background-position: right;
   }
@@ -218,16 +254,6 @@
   footer div:last-child a {
     margin: 2px 4px 4px 4px;
   }
-
-  /* footer div:last-child { */
-  /* flex-basis: 25%; */
-  /* flex-direction: row;
-    display: flex;
-  }
-
-  footer div:last-child a {
-    margin: 0 2px;
-  } */
 
   .feather-icon {
     height: 12px;

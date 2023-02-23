@@ -29,6 +29,11 @@
       <div class="login-button">
         <a href="#">Login</a>
       </div>
+      <div>
+        <a href="" id="hamburger-menu"
+          ><i class="feather-icon" data-feather="menu"></i
+        ></a>
+      </div>
     </nav>
 
     <section id="home">
@@ -157,8 +162,8 @@
     </section>
     <section id="ourhappyclient">
       <h3>Our Happy Client</h3>
-      <div class="row">
-        <div class="card">
+      <div class="row client-comment">
+        <!-- <div class="card">
           <span>"</span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
@@ -169,31 +174,7 @@
             <img src="img/ouzy.jpeg" width="25" height="25" alt="clein" />
             <p>Ouzy Maulana</p>
           </div>
-        </div>
-        <div class="card middle">
-          <span>"</span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-            facere repellendus! Dolorum aliquam recusandae optio eveniet nulla
-            ipsum officiis error maxime.
-          </p>
-          <div>
-            <img src="img/ouzy.jpeg" width="25" height="25" alt="clein" />
-            <p>Ouzy Maulana</p>
-          </div>
-        </div>
-        <div class="card">
-          <span>"</span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-            facere repellendus! Dolorum aliquam recusandae optio eveniet nulla
-            ipsum officiis error maxime.
-          </p>
-          <div>
-            <img src="img/ouzy.jpeg" width="25" height="25" alt="clein" />
-            <p>Ouzy Maulana</p>
-          </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section id="contact">
@@ -208,7 +189,6 @@
           width="500"
           height="350"
         ></iframe>
-
         <div>
           <h4>Chat us if you have a question</h4>
           <p>
@@ -264,19 +244,20 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
     <script>
       feather.replace();
 
-      var nilai = window.pageYOffset;
-      window.onscroll = function () {
-        var nilaiCurrent = window.pageYOffset;
-        if (nilai >= nilaiCurrent) {
-          document.querySelector(".navbar").style.top = "0";
-        } else {
-          document.querySelector(".navbar").style.top = "-90px";
-        }
-        nilai = nilaiCurrent;
-      };
+      // var nilai = window.pageYOffset;
+      // window.onscroll = function () {
+      //   var nilaiCurrent = window.pageYOffset;
+      //   if (nilai >= nilaiCurrent) {
+      //     document.querySelector(".navbar").style.top = "0";
+      //   } else {
+      //     document.querySelector(".navbar").style.top = "-90px";
+      //   }
+      //   nilai = nilaiCurrent;
+      // };
     </script>
   </body>
 </html>

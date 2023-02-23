@@ -60,6 +60,10 @@ body {
   text-decoration: none;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 #home {
   background-image: url("./img/scheduled\ messag.png");
   background-repeat: no-repeat;
