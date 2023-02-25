@@ -8,12 +8,14 @@
     background-position: right;
   }
 
+  #when-submit,
   #features,
   #ourhappyclient,
   #contact {
     padding: 32px 8% 32px;
   }
 
+  #when-submit h3,
   #features h3,
   #ourhappyclient h3,
   #contact h3 {
@@ -95,6 +97,23 @@
     height: 18px;
     width: 18px;
   }
+
+  #when-submit .card-header {
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  #when-submit .card {
+    width: 26rem;
+    height: 16.5rem;
+    margin: 2rem 2rem 2rem 2rem;
+  }
+
+  #when-submit .card ul li {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 451px) {
@@ -102,26 +121,35 @@
     font-size: 0.55em;
   }
 
-  .navbar .navbar-nav {
-    position: absolute;
-    top: 100%;
+  .navbar {
+    opacity: 1;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
     right: -100%;
     width: 30rem;
     height: 100vh;
     background-color: #25d366;
-    opacity: 0.99;
     transition: 0.4s;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .navbar .navbar-nav.active {
+  .navbar-nav.active {
     right: 0;
   }
 
-  .navbar .navbar-nav a {
+  .navbar-nav a {
+    color: #fff;
     display: block;
     margin: 1.5rem;
     font-size: 12px;
     padding: 2px;
+    text-decoration: none;
   }
 
   #hamburger-menu {
@@ -138,6 +166,7 @@
 
   #home {
     background-position: right;
+    height: 55rem;
   }
   #home .row {
     flex-wrap: nowrap;
@@ -172,6 +201,7 @@
     padding: 0 8% 32px;
   }
 
+  #when-submit h3,
   #features h3,
   #ourhappyclient h3,
   #contact h3 {
@@ -258,5 +288,11 @@
   .feather-icon {
     height: 12px;
     width: 12px;
+  }
+
+  #when-submit .card {
+    width: 32rem;
+    height: 16.5rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
 }

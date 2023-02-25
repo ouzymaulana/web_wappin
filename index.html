@@ -17,9 +17,6 @@
   </head>
   <body>
     <nav class="navbar">
-      <!-- <div class="logo">
-        <img src="img/highlight-wappin.png" alt="wappin" />
-      </div> -->
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#features">Features</a>
@@ -50,28 +47,75 @@
           <p>Free Trial Now!</p>
           <form action="">
             <div>
-              <input type="text" placeholder="Name" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="off"
+                placeholder="Name"
+                required
+              />
             </div>
             <div>
-              <input type="text" placeholder="Email" />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                autocomplete="off"
+                placeholder="Email"
+                required
+              />
             </div>
             <div>
-              <input type="text" placeholder="No Telp" />
+              <input
+                type="text"
+                id="no_telp"
+                name="no_telp"
+                autocomplete="off"
+                placeholder="No Telp"
+                required
+              />
             </div>
             <div>
-              <input type="text" placeholder="Company" />
+              <input
+                type="text"
+                id="company"
+                name="company"
+                autocomplete="off"
+                placeholder="Company"
+                required
+              />
             </div>
             <div>
               <textarea
-                name="Message"
+                id="message"
+                name="message"
                 cols="1"
                 rows="100"
                 placeholder="Message"
+                required
               ></textarea>
             </div>
             <button type="submit">REQUEST FREE TRIAL</button>
           </form>
         </div>
+      </div>
+    </section>
+    <section id="when-submit">
+      <h3>free trial client</h3>
+      <div class="row-data-form">
+        <!-- <div class="card">
+          <div class="card-header">
+            <p>free trial client</p>
+          </div>
+          <ul>
+            <li>nama : ${nama}</li>
+            <li>email : ${email}</li>
+            <li>no telp : ${notlp}</li>
+            <li>company : ${company}</li>
+            <li>message : ${message}</li>
+          </ul>
+        </div> -->
       </div>
     </section>
     <section id="features">
@@ -247,17 +291,6 @@
     <script src="script.js"></script>
     <script>
       feather.replace();
-
-      // var nilai = window.pageYOffset;
-      // window.onscroll = function () {
-      //   var nilaiCurrent = window.pageYOffset;
-      //   if (nilai >= nilaiCurrent) {
-      //     document.querySelector(".navbar").style.top = "0";
-      //   } else {
-      //     document.querySelector(".navbar").style.top = "-90px";
-      //   }
-      //   nilai = nilaiCurrent;
-      // };
     </script>
   </body>
 </html>
